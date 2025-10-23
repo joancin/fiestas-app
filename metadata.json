@@ -1,0 +1,5 @@
+{
+  "name": "Fiestas Pantano 2026",
+  "description": "A web platform for Fiestas Pantano 2026 to manage users, events, and RSVPs. This application provides a dynamic interface for both regular users and event organizers, featuring event listings, user profiles, a dashboard for event management, and a special raffle section.",
+  "requestFramePermissions": []
+}
