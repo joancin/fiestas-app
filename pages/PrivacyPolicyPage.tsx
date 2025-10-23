@@ -25,7 +25,7 @@ const PrivacyPolicyPage: React.FC = () => {
         <li>Gestionar tu cuenta de usuario y permitirte el acceso a la plataforma.</li>
         <li>Permitirte inscribirte (RSVP) en los eventos organizados.</li>
         <li>Mostrar tu nombre de usuario en la lista de asistentes de los eventos a los que te apuntes.</li>
-        <li>Garantizar el correcto funcionamiento técnico de la aplicación.</li>
+        <li>Garantizar el correcto funcionamiento técnico y la seguridad de la aplicación.</li>
       </ul>
 
       <h2 className="text-2xl font-semibold text-white mt-6 mb-3">3. Base Jurídica del Tratamiento</h2>
@@ -43,35 +43,30 @@ const PrivacyPolicyPage: React.FC = () => {
         <li>Contraseña (se guarda una versión cifrada e irreversible para tu seguridad).</li>
       </ul>
 
-      <h2 className="text-2xl font-semibold text-white mt-6 mb-3">5. Uso de Almacenamiento Local (No usamos Cookies de seguimiento)</h2>
+      <h2 className="text-2xl font-semibold text-white mt-6 mb-3">5. Alojamiento de Datos y Encargado del Tratamiento</h2>
       <p className="mb-4">
-        Esta aplicación web no utiliza cookies tradicionales para rastreo, análisis o publicidad. En su lugar, empleamos el <strong>almacenamiento local (`localStorage`)</strong> de tu navegador, una tecnología necesaria para que la aplicación pueda funcionar de forma autónoma sin un servidor central. Los datos que guardamos son de carácter técnico y esencial:
+        Para proporcionar este servicio, utilizamos la plataforma "Backend as a Service" de <strong>Supabase, Inc.</strong>, que actúa como nuestro <strong>Encargado del Tratamiento</strong>. Esto significa que todos los datos de la aplicación (usuarios, eventos, inscripciones, etc.) se almacenan de forma segura en la infraestructura en la nube gestionada por Supabase.
       </p>
-      <ul className="list-disc list-inside mb-4 pl-4 space-y-2">
-          <li><strong><code>fiestas_pantano_users</code></strong>: Almacena la lista de usuarios para gestionar el inicio de sesión.</li>
-          <li><strong><code>fiestas_pantano_events</code></strong>: Guarda la información de los eventos disponibles.</li>
-          <li><strong><code>fiestas_pantano_rsvps</code></strong>: Registra tus inscripciones a los eventos.</li>
-          <li><strong><code>fiestas_pantano_raffle</code></strong>: Contiene la información de la rifa.</li>
-          <li><strong><code>fiestas_pantano_session</code></strong>: Guarda un identificador para mantener tu sesión iniciada.</li>
-          <li><strong><code>fiestas_pantano_cookie_consent</code></strong>: Recuerda que has aceptado esta política para no mostrarte el aviso de nuevo.</li>
-      </ul>
-      <p className="mt-4">
-          Estos datos permanecen en tu dispositivo y son imprescindibles para el funcionamiento del servicio.
+      <p className="mb-4">
+        Nos hemos asegurado de que Supabase cumple con los más altos estándares de seguridad y protección de datos.
       </p>
       
       <h2 className="text-2xl font-semibold text-white mt-6 mb-3">6. Conservación de los Datos</h2>
       <p className="mb-4">
-        Conservaremos tus datos en el almacenamiento local de tu navegador mientras mantengas una cuenta activa en nuestra plataforma o hasta que decidas borrar los datos de navegación de tu navegador. Si eliminas los datos de navegación, tu cuenta y tus inscripciones se eliminarán de ese dispositivo.
+        Conservaremos tus datos personales en la base de datos mientras mantengas una cuenta activa en nuestra plataforma. Si decides eliminar tu cuenta o si el servicio finaliza, tus datos serán eliminados de forma permanente.
       </p>
 
       <h2 className="text-2xl font-semibold text-white mt-6 mb-3">7. Cesión de Datos y Transferencias Internacionales</h2>
       <p className="mb-4">
-        No vendemos, alquilamos ni cedemos tus datos personales a terceros. Tu <strong>nombre de usuario</strong> será el único dato visible para otros usuarios, y solo en las listas de asistentes de los eventos a los que te apuntes voluntariamente. No se realizan transferencias internacionales de datos.
+        No vendemos, alquilamos ni cedemos tus datos personales a terceros. Tu <strong>nombre de usuario</strong> será el único dato visible para otros usuarios, y solo en las listas de asistentes de los eventos a los que te apuntes voluntariamente.
+      </p>
+      <p className="mb-4">
+        Dado que utilizamos los servicios de Supabase, Inc., tus datos pueden ser transferidos y procesados en servidores ubicados fuera del Espacio Económico Europeo (EEE). Estas transferencias se realizan bajo las Cláusulas Contractuales Tipo (SCC) aprobadas por la Comisión Europea, garantizando un nivel de protección de datos equivalente al europeo.
       </p>
 
       <h2 className="text-2xl font-semibold text-white mt-6 mb-3">8. Medidas de Seguridad</h2>
       <p className="mb-4">
-        Hemos adoptado medidas técnicas y organizativas para proteger tus datos. La principal medida es que toda la información se gestiona en tu propio dispositivo a través del almacenamiento local. Para proteger tus credenciales, tu contraseña se somete a un proceso de "hashing" con una "sal" única antes de guardarse. Esto significa que la contraseña original nunca se almacena y no puede ser recuperada, ni siquiera por nosotros, garantizando un alto nivel de seguridad para tu cuenta. Además, el acceso a funcionalidades restringidas está protegido por un sistema de roles.
+        Hemos adoptado medidas técnicas y organizativas para proteger tus datos. Esto incluye el uso de conexiones cifradas (SSL), el almacenamiento seguro de contraseñas mediante "hashing" y la gestión de permisos de acceso a través del sistema de autenticación de Supabase.
       </p>
       
       <h2 className="text-2xl font-semibold text-white mt-6 mb-3">9. Derechos de los Usuarios</h2>
@@ -81,12 +76,12 @@ const PrivacyPolicyPage: React.FC = () => {
       <ul className="list-disc list-inside mb-4 pl-4">
         <li><strong>Acceso:</strong> Consultar qué datos tenemos sobre ti.</li>
         <li><strong>Rectificación:</strong> Modificar tus datos si son incorrectos.</li>
-        <li><strong>Supresión ("Derecho al Olvido"):</strong> Solicitar la eliminación de tus datos.</li>
+        <li><strong>Supresión ("Derecho al Olvido"):</strong> Solicitar la eliminación permanente de tu cuenta y todos tus datos asociados.</li>
         <li><strong>Oposición:</strong> Oponerte a un determinado uso de tus datos.</li>
         <li><strong>Limitación del tratamiento y Portabilidad.</strong></li>
       </ul>
       <p className="mb-4">
-        Puedes ejercer estos derechos contactándonos en <a href="mailto:info@fiestaspantano.es" className="text-cyan-400 hover:underline">info@fiestaspantano.es</a>. La forma más directa de eliminar todos tus datos es borrando los datos del sitio desde la configuración de tu navegador web.
+        Puedes ejercer estos derechos contactándonos en <a href="mailto:info@fiestaspantano.es" className="text-cyan-400 hover:underline">info@fiestaspantano.es</a>. A diferencia de la versión anterior de la app, borrar los datos de tu navegador ya no eliminará tu cuenta de nuestros sistemas.
       </p>
 
       <div className="mt-8 text-center">
