@@ -26,8 +26,8 @@ const CookieBanner: React.FC = () => {
     <div className="fixed bottom-0 left-0 right-0 bg-gray-800 border-t border-gray-700 p-4 z-50">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
         <p className="text-sm text-gray-300 text-center md:text-left">
-          Utilizamos almacenamiento local para el funcionamiento de esta web. Para más detalles sobre qué datos guardamos en tu navegador, consulta nuestra{' '}
-          <Link to="/privacy-policy" className="text-cyan-400 hover:underline">Política de Privacidad</Link>.
+          Este sitio web utiliza cookies técnicas y almacenamiento local esenciales para su funcionamiento, como mantener tu sesión iniciada. Consulta nuestra{' '}
+          <Link to="/privacy-policy" className="text-cyan-400 hover:underline">Política de Privacidad</Link> para más información.
         </p>
         <button
           onClick={handleAccept}
